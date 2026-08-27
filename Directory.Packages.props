@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="TShock" Version="6.1.0" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="9.0.0" />
+  </ItemGroup>
+</Project>

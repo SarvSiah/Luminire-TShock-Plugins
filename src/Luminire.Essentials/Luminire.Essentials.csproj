@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Description>Luminire Essentials - quality of life commands and utilities for TShock 6.1 (Terraria 1.4.5.6 / .NET 9)</Description>
+    <Version>1.0.0</Version>
+    <AssemblyName>Luminire.Essentials</AssemblyName>
+    <RootNamespace>Luminire.Essentials</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TShock" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Luminire.Core\Luminire.Core.csproj" Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- Ensure DLL is placed in ServerPlugins when built locally (optional) -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+</Project>

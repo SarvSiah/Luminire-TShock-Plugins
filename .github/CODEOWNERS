@@ -1,0 +1,10 @@
+# CODEOWNERS for Luminire TShock Plugins
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+*       @SarvSiah
+
+/src/Luminire.Core/    @SarvSiah
+/src/Luminire.Essentials/ @SarvSiah
+/src/Luminire.Template/   @SarvSiah
+/docs/                 @SarvSiah
+/.github/              @SarvSiah

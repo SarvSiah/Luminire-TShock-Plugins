@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question (Discussions)
+    url: https://github.com/SarvSiah/Luminire-TShock-Plugins/discussions
+    about: Ask the community for help
+  - name: 📚 TShock Documentation
+    url: https://tshock.readme.io/
+    about: Official TShock docs
+  - name: 🎮 TShock Discord
+    url: https://discord.gg/C2wrTcJ
+    about: Join TShock community

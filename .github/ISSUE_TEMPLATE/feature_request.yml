@@ -1,0 +1,57 @@
+name: Feature Request
+description: Suggest an idea for Luminire
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! We love community ideas.
+
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Which plugin or new plugin?
+      options:
+        - New Plugin
+        - Luminire.Core
+        - Luminire.Essentials
+        - Luminire.Template
+        - General / All
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: e.g., I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, examples, etc.
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Are you willing to implement this?
+      options:
+        - label: Yes, I'd like to implement this feature and open a PR

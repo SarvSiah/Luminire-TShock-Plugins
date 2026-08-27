@@ -1,0 +1,90 @@
+name: Bug Report
+description: File a bug report to help us improve
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please provide as much detail as possible.
+
+  - type: input
+    id: plugin
+    attributes:
+      label: Affected Plugin
+      description: Which plugin is affected?
+      placeholder: e.g., Luminire.Essentials
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Plugin Version
+      description: Version of the plugin (from /luminfo or DLL properties)
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: tshock-version
+    attributes:
+      label: TShock Version
+      description: TShock version you are running
+      placeholder: e.g., 6.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: terraria-version
+    attributes:
+      label: Terraria Version
+      placeholder: e.g., 1.4.5.6
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear and concise description of the bug
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the bug?
+      value: |
+        1. Go to '...'
+        2. Execute command '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server Logs / Stacktrace
+      description: Paste relevant logs (remove sensitive info)
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have checked that this bug is not already reported
+          required: true
+        - label: I am using TShock 6.1.0 and .NET 9.0
+          required: true
+        - label: I have tested with only Luminire plugins (no other plugins interference)
+          required: false
